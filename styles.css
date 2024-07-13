@@ -1,7 +1,50 @@
 html {
     font-family: Dosis;
+    font-size: 16px;
   }
 
-.main {
-    display: flexbox;
+body {
+    background-color: white;
+    text-align: center;
 }
+
+a {
+    color: rgb(22, 46, 111);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    margin: 0, 10%;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.innovation {
+    background-color: #e5e7eb76;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .innovation img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  #innovation-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+  }
