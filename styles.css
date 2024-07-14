@@ -48,8 +48,12 @@ main {
 }
 
 .content img {
+  width: 100%;
+  max-width: 30rem; /* 12.5rem = 200px */
+  height: 20rem;
+  object-fit: cover;
   border-radius: 2%;
-  max-width: 100%;
+  overflow: hidden;
 }
 
 .content section {
@@ -69,8 +73,12 @@ main {
 }
 
 @media only screen
-and (max-width : 40rem) {
+and (max-width : 55rem) {
   .content {
     flex-direction: column;
+  }
+
+  .content section img {
+    order: -1;
   }
 }
