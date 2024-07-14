@@ -16,11 +16,6 @@ p {
   margin: 0;
 }
 
-.header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 .navbar {
     display: flex;
@@ -28,6 +23,12 @@ p {
     margin: 0.5rem 10%;
     align-items: center;
     font-size: 1.2rem;
+}
+
+.navbar li {
+  list-style: none;
+  margin: 0;
+  width: inherit;
 }
 
 
@@ -51,6 +52,15 @@ p {
   border-radius: 2%;
 }
 
+.teammate img {
+  width: 100%;
+  max-width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 2%;
+}
+
 .content section {
   display: flex;
   margin: 0.5rem;
@@ -69,6 +79,12 @@ p {
   margin: 1.5rem 4rem;
 }
 
+.team {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
 @media only screen
 and (max-width : 55rem) {
   .content {
@@ -83,5 +99,9 @@ and (max-width : 55rem) {
 
   .content section img {
     order: -1;
+  }
+
+  .team {
+    flex-direction: column;
   }
 }
