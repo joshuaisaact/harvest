@@ -19,14 +19,16 @@ p {
 
 .header {
   display: flex;
-  background-color: #e5e7eb76;
+  background-color: #F6F7F7;
   justify-content: space-between;
   flex-direction: row;
   width: 95%;
-  margin: 0.3rem auto;
+  margin: 1rem auto;
   border-radius: 1rem;
   row-gap: 0%;
   padding: 0.5rem;
+  position: sticky;
+  top: 0;
 }
 
 .header img {
@@ -149,6 +151,10 @@ and (max-width : 55rem) {
   .content section {
     flex-direction: column;
     gap: 0;
+  }
+
+  .header {
+    position: unset;
   }
 
   .content section img {
