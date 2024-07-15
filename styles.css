@@ -17,6 +17,10 @@ p {
   margin: 0;
 }
 
+h2 {
+  margin-bottom: 0;
+}
+
 .header {
   display: flex;
   background-color: #F6F7F7;
@@ -74,9 +78,8 @@ nav input[type='checkbox'], nav label {
   width: 95%;
 }
 
-#team-container {
+.team-container {
   width: 95%;
-  gap: 2rem;
   padding: 0.5rem;
   border-radius: 1rem;
   margin: 0.3rem auto;
@@ -96,7 +99,6 @@ nav input[type='checkbox'], nav label {
   align-items: center;
   width: 95%;
   overflow: hidden;
-  background-color: #e5e7eb76;
   gap: 2rem;
 }
 
