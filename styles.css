@@ -23,7 +23,7 @@ p {
   justify-content: space-between;
   flex-direction: row;
   width: 95%;
-  margin: 1rem auto;
+  margin: 0.3rem auto;
   border-radius: 1rem;
   row-gap: 0%;
   padding: 0.5rem;
@@ -55,6 +55,7 @@ nav input[type='checkbox'], nav label {
   margin: 0;
   display: inline-flex;
   flex-direction: row;
+  padding: 0;
 }
 
 .navbar ul li {
@@ -151,10 +152,6 @@ and (max-width : 55rem) {
   .content section {
     flex-direction: column;
     gap: 0;
-  }
-
-  .header {
-    position: unset;
   }
 
   .content section img {
