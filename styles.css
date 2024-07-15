@@ -154,6 +154,10 @@ and (max-width : 55rem) {
     gap: 0;
   }
 
+  .header {
+    position: unset;
+  }
+
   .content section img {
     order: -1;
   }
