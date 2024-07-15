@@ -13,16 +13,26 @@
 
 <body>
   <div class="header">
-    <img src="media/harvest logo.png" alt="Harvest: Nourishing the Future">
-    <ul class="navbar">
-      <li class="navlink"><a href="#mission">Mission Statement</a></p>
-      <li class="navlink"><a href="#portfolio">Sustainablilty</a></p>
-      <li class="navlink"><a href="#community">Community</a></p>
-      <li class="navlink"><a href="#innovation">Nutrition</a></p>
-      <li class="navlink"><a href="#join">Join us</a></p>
-    </ul>
-  </div>
+    <nav class="navbar">
+     <ul>
+      <li>
+        <img src="media/harvest logo.png" alt="Harvest: Nourishing the Future">
+      </li>
+     </ul>
 
+      <label for='menu' tabindex="0">
+        🍔
+      </label>
+    <input id='menu' type='checkbox'/>
+      <ul id="navi">
+        <li><a href="#mission">Mission Statement</a></li>
+        <li><a href="#portfolio">Sustainablilty</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#innovation">Nutrition</a></li>
+        <li><a href="#join">Join us</a></li>
+      </ul>
+    </nav>
+  </div>
 <main>
 
   <div class="content" id="mission">
@@ -86,7 +96,7 @@
 
   </div>
 
-    <div id="team-container">
+    <div class="team-container">
       <h2>Our Team</h2>
       <div class="team">
         <div class="teammate">

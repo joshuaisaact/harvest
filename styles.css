@@ -16,32 +16,90 @@ p {
   margin: 0;
 }
 
+.header {
+  display: flex;
+  background-color: #e5e7eb76;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 95%;
+  margin: 0.3rem auto;
+  border-radius: 1rem;
+  row-gap: 0%;
+  padding: 0.5rem;
+}
+
+.header img {
+  height: 4rem;
+  width: auto;
+  vertical-align: baseline;
+}
 
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    margin: 0.5rem 10%;
-    align-items: center;
-    font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  align-items: center;
+  width: 100%;
 }
 
-.navbar li {
+nav input[type='checkbox'], nav label {
+  display: none;
+}
+
+.navbar ul {
   list-style: none;
   margin: 0;
-  width: inherit;
+  display: inline-flex;
+  flex-direction: row;
 }
 
+.navbar ul li {
+  display: inline-flex;
+  margin: 0.3em 1em;
+}
 
 .content {
   background-color: #e5e7eb76;
   display: flex;
   row-gap: 0%;
   padding: 0.5rem;
-  border-radius: 2%;
-  margin: 0.3rem;
+  border-radius: 1rem;
+  margin: 0.3rem auto;
   align-items: center;
   width: 95%;
 }
+
+#team-container {
+  width: 95%;
+  gap: 2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin: 0.3rem auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb76;
+}
+
+
+.team {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin: 0.3rem auto;
+  align-items: center;
+  width: 95%;
+  overflow: hidden;
+  background-color: #e5e7eb76;
+  gap: 2rem;
+}
+
+.teammate {
+  margin: 1rem 1rem;
+}
+
 
 .content img {
   width: 100%;
@@ -49,7 +107,7 @@ p {
   height: 20rem;
   object-fit: cover;
   overflow: hidden;
-  border-radius: 2%;
+  border-radius: 1rem;
 }
 
 .teammate img {
@@ -58,7 +116,7 @@ p {
   height: 30rem;
   object-fit: cover;
   overflow: hidden;
-  border-radius: 2%;
+  border-radius: 1rem;
 }
 
 .content section {
@@ -79,11 +137,6 @@ p {
   margin: 1.5rem 4rem;
 }
 
-.team {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-}
 
 @media only screen
 and (max-width : 55rem) {
@@ -104,4 +157,36 @@ and (max-width : 55rem) {
   .team {
     flex-direction: column;
   }
+
+  .navbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .navbar label {
+    display: inline-block;
+    padding: 0.5em;
+    line-height: 1.6em;
+    justify-self: end;
+    margin-right: 1rem;
+  }
+
+  .navbar ul {
+    display: block;
+    text-align: right;
+  }
+
+  .navbar ul li {
+    margin-bottom: 0;
+    width: 100%;
+    text-align: right;
+    padding: 0.5em;
+    gap: 2rem;
+  }
+
+  input[type='checkbox']:not(:checked)+ul {
+    display: none;
+  }
+
 }
