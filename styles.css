@@ -194,10 +194,16 @@ and (max-width : 55rem) {
     text-align: right;
     padding: 0.5em;
     gap: 2rem;
+    margin: 0;
   }
 
   .navbar #navi li {
     justify-content: center;
+    width: 100%;
+  }
+
+  #navi {
+    width: 100%;
   }
 
   input[type='checkbox']:not(:checked)+ul {
