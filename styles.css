@@ -10,6 +10,7 @@ body {
 
 a {
     color: rgb(22, 46, 111);
+    text-decoration: none;
 }
 
 p {
@@ -167,9 +168,10 @@ and (max-width : 55rem) {
   .navbar label {
     display: inline-block;
     padding: 0.5em;
-    line-height: 1.6em;
+    line-height: 3rem;
     justify-self: end;
     margin-right: 1rem;
+    font-size: 50px;
   }
 
   .navbar ul {
